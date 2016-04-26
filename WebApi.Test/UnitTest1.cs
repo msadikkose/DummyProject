@@ -25,7 +25,7 @@ namespace WebApi.Test
             var response = new Models.GuestResponse() { Email = "abc@cde.com", Name = "Test Name", WillAttend = false };
             controller.HebeleHubele(response);
             var get = controller.GetAttendees();
-            Assert.IsTrue(!get.Contains(response));
+            Assert.IsTrue(get.Contains(response));
             //response.WillAttend = true;
             //controller.HebeleHubele(response);
             //get = controller.GetAttendees();
