@@ -1,14 +1,14 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using MvcContrib.TestHelper;
 using WebApi.Controllers;
 
 namespace WebApi.Test
 {
-    [TestClass]
+    [TestFixture]
     public class UnitTest1
     {
-        [TestMethod]
+        [Test]
         public void TestMethod1()
         {
             var controller = new RsvpController();
@@ -18,7 +18,7 @@ namespace WebApi.Test
 
         }
 
-        [TestMethod]
+        [Test]
         public void TestMethod2()
         {
             var controller = new RsvpController();
